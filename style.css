@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(bg9.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.447);
+  backdrop-filter: blur(11px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wrapper h1 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.selectbox-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input,
+.input-box select {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.result-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-btn {
+  position: fixed;
+  top: 20px;
+  right: 15px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.about-btn a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.about-btn a:hover {
+  text-decoration: underline;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 60px;
+  width: 30px;
+  height: 30px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 12px #4caf50;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  user-select: none;
+  z-index: 9999;
+}
+
+.theme-toggle:hover {
+  background-color: #45a049;
+  box-shadow: 0 0 20px #45a049;
+}
+
+/* Light mode overrides injected dynamically */
+.light-mode body {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.light-mode .wrapper {
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.light-mode .btn {
+  background-color: #1976d2;
+  color: white;
+}
+
+.light-mode .about-btn a {
+  color: #1976d2;
+}
+
+.light-mode .input-box input,
+.light-mode .input-box select {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+.light-mode .input-box input::placeholder {
+  color: #666;
+}
