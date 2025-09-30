@@ -53,3 +53,9 @@ streamlit run streamlit_app.py
 - Use the dark/light mode toggle button in the top right corner to switch themes.
 
 Make sure you have your microphone connected and working for audio input.
+
+## Screenshots
+
+<img width="1840" height="931" alt="image" src="https://github.com/user-attachments/assets/6c8f5e4c-89a0-4415-9f77-cb226b689b05" />
+<img width="1790" height="918" alt="image" src="https://github.com/user-attachments/assets/c0051e3b-b5db-4ef7-86b8-b6db336c6fef" />
+
